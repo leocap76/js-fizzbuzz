@@ -10,20 +10,20 @@ for(var i = 0; i < 100; i++) {
 //numeri che siano sia "modulo" di tre e di cinque; ex: 15-30
   if ((i % 3 == 0) && (i % 5 == 0)) {
      console.log('FIZZBUZZ');
-     document.getElementById('numeri').innerHTML = (FIZZBUZZ);
+     document.getElementById('numeri').innerHTML += '<li>' + FIZZBUZZ + '</li>';
    }
 //numeri moduli di tre
    else if(i % 3 == 0) {
      console.log('FIZZ');
-     document.getElementById('numeri').innerHTML = (FIZZ);
+     document.getElementById('numeri').innerHTML += '<li>' + FIZZ + '</li>';
    }
 //numeri moduli di cinque
    else if(i % 5 == 0) {
      console.log('BUZZ');
-     document.getElementById('numeri').innerHTML = (BUZZ);
+     document.getElementById('numeri').innerHTML += '<li>' + BUZZ + '</li>';
    }
 
    else {
      console.log(i);
-     document.getElementById('numeri').innerHTML = i;
+     document.getElementById('numeri').innerHTML += '<li>' + i + '</li>';
    }
